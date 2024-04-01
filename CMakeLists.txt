@@ -6,7 +6,7 @@ add_executable(mockcoin_node main.cpp)
 
 if(APPLE)
     include_directories(/opt/local/include)
-    target_link_libraries(mockcoi_node /opt/local/lib/libcryptopp.a)
+    target_link_libraries(mockcoin_node /opt/local/lib/libcryptopp.a)
 else()
     # Use pkg-config to find Crypto++
     find_package(PkgConfig REQUIRED)
