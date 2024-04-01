@@ -1,3 +1,3 @@
-/home/manwel/CLionProjects/untitled/cmake-build-debug/CMakeFiles/mockcoin.dir
+/home/manwel/CLionProjects/untitled/cmake-build-debug/CMakeFiles/mockcoin_node.dir
 /home/manwel/CLionProjects/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/manwel/CLionProjects/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -41,36 +41,36 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/manwel/CLionProjects/untitled/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target mockcoin
+# Object build statements for EXECUTABLE target mockcoin_node
 
 
 #############################################
-# Order-only phony target for mockcoin
+# Order-only phony target for mockcoin_node
 
-build cmake_object_order_depends_target_mockcoin: phony || CMakeFiles/mockcoin.dir
+build cmake_object_order_depends_target_mockcoin_node: phony || CMakeFiles/mockcoin_node.dir
 
-build CMakeFiles/mockcoin.dir/main.cpp.o: CXX_COMPILER__mockcoin_unscanned_Debug /home/manwel/CLionProjects/untitled/main.cpp || cmake_object_order_depends_target_mockcoin
-  DEP_FILE = CMakeFiles/mockcoin.dir/main.cpp.o.d
+build CMakeFiles/mockcoin_node.dir/main.cpp.o: CXX_COMPILER__mockcoin_node_unscanned_Debug /home/manwel/CLionProjects/untitled/main.cpp || cmake_object_order_depends_target_mockcoin_node
+  DEP_FILE = CMakeFiles/mockcoin_node.dir/main.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/mockcoin.dir
-  OBJECT_FILE_DIR = CMakeFiles/mockcoin.dir
+  OBJECT_DIR = CMakeFiles/mockcoin_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/mockcoin_node.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target mockcoin
+# Link build statements for EXECUTABLE target mockcoin_node
 
 
 #############################################
-# Link the executable mockcoin
+# Link the executable mockcoin_node
 
-build mockcoin: CXX_EXECUTABLE_LINKER__mockcoin_Debug CMakeFiles/mockcoin.dir/main.cpp.o
+build mockcoin_node: CXX_EXECUTABLE_LINKER__mockcoin_node_Debug CMakeFiles/mockcoin_node.dir/main.cpp.o
   FLAGS = -g
   LINK_LIBRARIES = -lcrypto++
-  OBJECT_DIR = CMakeFiles/mockcoin.dir
+  OBJECT_DIR = CMakeFiles/mockcoin_node.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = mockcoin
-  TARGET_PDB = mockcoin.dbg
+  TARGET_FILE = mockcoin_node
+  TARGET_PDB = mockcoin_node.dbg
 
 
 #############################################
@@ -106,7 +106,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/manwel/CLionProjects/untitled/cmake-build-debug
 
-build all: phony mockcoin
+build all: phony mockcoin_node
 
 # =============================================================================
 # Built-in targets

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "mockcoin"
+			"path" : "mockcoin_node"
 		}
 	],
 	"backtrace" : 1,
@@ -60,7 +60,7 @@
 			]
 		}
 	],
-	"id" : "mockcoin::@6890427a1f51a3e7e1df",
+	"id" : "mockcoin_node::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -81,8 +81,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "mockcoin",
-	"nameOnDisk" : "mockcoin",
+	"name" : "mockcoin_node",
+	"nameOnDisk" : "mockcoin_node",
 	"paths" : 
 	{
 		"build" : ".",

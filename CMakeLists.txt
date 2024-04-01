@@ -1,16 +1,20 @@
-cmake_minimum_required(VERSION 3.27)
+cmake_minimum_required(VERSION 3.0)
 project(mockcoin)
 
-set(CMAKE_CXX_STANDARD 17)
+# Add your source files here
+add_executable(mockcoin_node main.cpp)
 
-# Use pkg-config to find Crypto++
-find_package(PkgConfig REQUIRED)
-pkg_check_modules(CRYPTOPP REQUIRED libcrypto++)
+if(APPLE)
+    include_directories(/opt/local/include)
+    target_link_libraries(mockcoi_node /opt/local/lib/libcryptopp.a)
+else()
+    # Use pkg-config to find Crypto++
+    find_package(PkgConfig REQUIRED)
+    pkg_check_modules(CRYPTOPP REQUIRED libcrypto++)
 
-# Include Crypto++ headers
-include_directories(${CRYPTOPP_INCLUDE_DIRS})
+    # Include Crypto++ headers
+    include_directories(${CRYPTOPP_INCLUDE_DIRS})
 
-add_executable(mockcoin main.cpp)
-
-# Link against Crypto++ libraries
-target_link_libraries(mockcoin ${CRYPTOPP_LIBRARIES})
+    # Link against Crypto++ libraries
+    target_link_libraries(mockcoin_node ${CRYPTOPP_LIBRARIES})
+endif()
