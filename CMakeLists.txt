@@ -2,7 +2,14 @@ cmake_minimum_required(VERSION 3.0)
 project(mockcoin)
 
 # Add your source files here
-add_executable(mockcoin_node main.cpp)
+add_executable(mockcoin_node main.cpp
+        Block.h
+        Transaction.h
+        Block.cpp
+        Transaction.cpp
+        Node.cpp
+        Node.h
+)
 
 if(APPLE)
     include_directories(/opt/local/include)

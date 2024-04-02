@@ -55,6 +55,24 @@ build CMakeFiles/mockcoin_node.dir/main.cpp.o: CXX_COMPILER__mockcoin_node_unsca
   OBJECT_DIR = CMakeFiles/mockcoin_node.dir
   OBJECT_FILE_DIR = CMakeFiles/mockcoin_node.dir
 
+build CMakeFiles/mockcoin_node.dir/Block.cpp.o: CXX_COMPILER__mockcoin_node_unscanned_Debug /home/manwel/CLionProjects/untitled/Block.cpp || cmake_object_order_depends_target_mockcoin_node
+  DEP_FILE = CMakeFiles/mockcoin_node.dir/Block.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/mockcoin_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/mockcoin_node.dir
+
+build CMakeFiles/mockcoin_node.dir/Transaction.cpp.o: CXX_COMPILER__mockcoin_node_unscanned_Debug /home/manwel/CLionProjects/untitled/Transaction.cpp || cmake_object_order_depends_target_mockcoin_node
+  DEP_FILE = CMakeFiles/mockcoin_node.dir/Transaction.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/mockcoin_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/mockcoin_node.dir
+
+build CMakeFiles/mockcoin_node.dir/Node.cpp.o: CXX_COMPILER__mockcoin_node_unscanned_Debug /home/manwel/CLionProjects/untitled/Node.cpp || cmake_object_order_depends_target_mockcoin_node
+  DEP_FILE = CMakeFiles/mockcoin_node.dir/Node.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/mockcoin_node.dir
+  OBJECT_FILE_DIR = CMakeFiles/mockcoin_node.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target mockcoin_node
@@ -63,7 +81,7 @@ build CMakeFiles/mockcoin_node.dir/main.cpp.o: CXX_COMPILER__mockcoin_node_unsca
 #############################################
 # Link the executable mockcoin_node
 
-build mockcoin_node: CXX_EXECUTABLE_LINKER__mockcoin_node_Debug CMakeFiles/mockcoin_node.dir/main.cpp.o
+build mockcoin_node: CXX_EXECUTABLE_LINKER__mockcoin_node_Debug CMakeFiles/mockcoin_node.dir/main.cpp.o CMakeFiles/mockcoin_node.dir/Block.cpp.o CMakeFiles/mockcoin_node.dir/Transaction.cpp.o CMakeFiles/mockcoin_node.dir/Node.cpp.o
   FLAGS = -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = -lcrypto++
