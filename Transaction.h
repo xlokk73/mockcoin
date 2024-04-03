@@ -21,6 +21,7 @@ public:
     double amount; // Amount of coins being transferred
     uint previous_transaction_index; // Index of the previous transaction in the block
     std::string signature; // Hash of previous transaction + recipient public key
+    static std::string sha256(const std::string &input);
     bool is_signature_valid() const;
 
     /**
