@@ -89,7 +89,7 @@ bool Block::is_valid() {
     }
 
     // Check if the hash is valid
-    return is_pow_valid(sha256(this.to_bytes()));
+    return is_pow_valid(sha256(this->to_bytes()));
 }
 
 std::string Block::sha256(const std::string &input) {

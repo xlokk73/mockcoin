@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "mockcoin_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-mockcoin_node-Debug-f98f41ae19499f476b8b.json",
+					"jsonFile" : "target-mockcoin_node-Debug-3db9748284cb95487643.json",
 					"name" : "mockcoin_node",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/manwel/CLionProjects/untitled/cmake-build-debug",
-		"source" : "/home/manwel/CLionProjects/untitled"
+		"build" : "/Users/manwelbugeja/Projects/mockcoin/cmake-build-debug",
+		"source" : "/Users/manwelbugeja/Projects/mockcoin"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 5
 	}
 }

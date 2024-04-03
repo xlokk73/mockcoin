@@ -12,6 +12,7 @@
 #include <cryptopp/sha.h>
 #include <cryptopp/hex.h>
 #include <cryptopp/filters.h>
+#include <unordered_map>
 #include "Transaction.h"
 
 class Block {

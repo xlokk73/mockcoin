@@ -12,16 +12,16 @@
 #include <cryptopp/sha.h>
 #include <cryptopp/hex.h>
 #include <cryptopp/filters.h>
-#include "Block.h"
+
 
 class Transaction {
 public:
     std::string recipient_public_key;
     std::string sender_public_key;
-    double amount{}; // Amount of coins being transferred
-    uint previous_transaction_index{}; // Index of the previous transaction in the block
+    double amount; // Amount of coins being transferred
+    uint previous_transaction_index; // Index of the previous transaction in the block
     std::string signature; // Hash of previous transaction + recipient public key
-    [[nodiscard]] bool is_signature_valid() const;
+    bool is_signature_valid() const;
 
     /**
      * TODO:
